@@ -1,0 +1,41 @@
+POST http://localhost:3000/todo
+Content-Type: application/json
+Accept: application/json
+
+{
+  "title": "할일2",
+  "done": false
+}
+
+###
+
+GET http://localhost:3000/users
+Accept: application/json
+
+###
+
+POST http://localhost:3000/users
+Content-Type: application/json
+Accept: application/json
+
+{
+  "title": "할일",
+  "done": false
+}
+
+###
+
+GET http://localhost:3000/env
+Content-Type: application/json
+Accept: application/json
+
+###
+
+GET http://localhost:3000/login
+Content-Type: application/json
+Accept: application/json
+###
+
+GET http://localhost:3000/login/verify?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6InN5c3RlbSIsImlhdCI6MTY1Mjk0MjIxNiwiZXhwIjoxNjUyOTQ1ODE2fQ.49bogbiZ2iO-htYPM0lMoyF7p6Qzof5OeZUuQpMieB8
+Content-Type: application/json
+Accept: application/json
