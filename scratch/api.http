@@ -9,12 +9,13 @@ Accept: application/json
 
 ###
 
-GET http://localhost:3000/users
+GET http://localhost:3000/todo
 Accept: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6InN5c3RlbSIsImlhdCI6MTY1Mjk0MjIxNiwiZXhwIjoxNjUyOTQ1ODE2fQ.49bogbiZ2iO-htYPM0lMoyF7p6Qzof5OeZUuQpMieB8
 
 ###
 
-POST http://localhost:3000/users
+POST http://localhost:3000/todo
 Content-Type: application/json
 Accept: application/json
 

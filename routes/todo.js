@@ -1,11 +1,11 @@
 var express = require('express');
 var router = express.Router();
 
-var todo = [];
+const jwtVerify = require('../middlewares/jwt-middleware');
 
 /* GET todo listing. */
-router.get('/', function (req, res, next) {
-    res.send(todo);
+router.get('/', jwtVerify, function (req, res, next) {
+    res.send({});
 });
 
 /* POST todo listing. */
